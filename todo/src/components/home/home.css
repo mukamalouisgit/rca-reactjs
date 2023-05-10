@@ -1,0 +1,9 @@
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    .contents {
+        padding: 100px;
+        text-align: justify !important;
+        text-justify: inter-word;
+        /**background: greenyellow;*/
+
+    }

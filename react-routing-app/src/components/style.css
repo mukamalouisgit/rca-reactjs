@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+
+}
+
+/* Style the top navigation bar */
+.menu {
+    overflow: hidden;
+    background-color: #7EC8E3;
+}
+
+/* Style the menu links */
+.menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.menu a:hover {
+    background-color: #055C9D;
+    color: white;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    body {
+        margin-top: 130px;
+        background-color: aquamarine;
+        margin-bottom: 130px;
+    }
+
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+/* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+body {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+}
+
+/*Start Fixing header and footer */
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    color: rgb(71, 71, 71);
+    background-color: #7EC8E3;
+    padding: 10px;
+    bottom: 0;
+}
+
+/* End Fixing header and footer */
+/* Start Top div  */
+.contacts {
+    background-color: #055C9D;
+    color: white;
+}
+
+/* End Top div  */
+
+
+
+/* Start an animating border */
+.fixed-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #055C9D;
+    transition: width 0.9s ease;
+}
+
+.fixed-header:hover::after {
+    width: 100%;
+}
+
+/* End an animating border */
