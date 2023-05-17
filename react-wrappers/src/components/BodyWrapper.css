@@ -1,0 +1,5 @@
+.body-wrapper {
+    margin-top: 80px; /* Adjust the margin based on the height of the header and footer */
+    margin-bottom: 80px;
+    color: #000;
+  }

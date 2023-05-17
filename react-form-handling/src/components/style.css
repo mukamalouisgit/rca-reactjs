@@ -1,0 +1,9 @@
+.small-width {
+    width: 100px;
+    background-color: aqua;
+  }
+
+  .large-width {
+    background-color: brown;
+    width: 200px;
+  }
