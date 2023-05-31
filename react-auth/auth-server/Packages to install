@@ -1,0 +1,23 @@
+npm install @types/bcrypt bcrypt
+
+npm install @nestjs/passport passport @types/passport-local passport-local @types/express
+
+npm install @nestjs/jwt passport-jwt @types/passport-jwt cookie-parser @types/cookie-parser
+
+npm install @nestjs/typeorm typeorm pg
+
+npm i --save class-validator class-transformer
+
+#For environment variables
+npm install @nestjs/config
+npm install @hapi/joi @types/hapi__joi
+
+
+#to upload file
+npm i -D @types/multer
+
+#to send email ------------->source: https://notiz.dev/blog/send-emails-with-nestjs
+npm install --save @nestjs-modules/mailer nodemailer handlebars
+npm install --save-dev @types/nodemailer
+
+

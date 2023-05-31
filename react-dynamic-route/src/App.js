@@ -9,6 +9,8 @@ import Create from './components/Create';
 import Todos from './components/Todos';
 import Update from './components/Update';
 import Post from './components/Post';
+// import Createe from './practice/Create';
+import Retrieve from './practice/Retrieve';
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
             <Route path="/update/:id" element={<Update />} />
             <Route path="/post/:id" element={<Post />} />
           </Routes>
+        </div>
+        <div>
+          {/* <Createe/> */}
+          <Retrieve/>
         </div>
         <Footer />
       </BrowserRouter>

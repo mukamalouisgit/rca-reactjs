@@ -1,0 +1,84 @@
+
+
+/* styles.css */
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+  font-family: 'Mulish';
+  border: 1px solid #0056b3;
+  padding: 20px;
+  float: right;
+}
+
+.image-container{
+  background-image: url('./Images/car.jpeg');
+  max-width: 50%;
+}
+
+
+h1{
+  text-align: center;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  width: auto;
+  margin-right: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}

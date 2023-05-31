@@ -28,6 +28,7 @@ const Post = () => {
         };
         fetch();
     }, [id]);
+    
     return (
         <div className="contents px-4 text-center">
             {loading}

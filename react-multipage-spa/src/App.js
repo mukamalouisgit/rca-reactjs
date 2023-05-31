@@ -1,21 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import NotFound from './components/NotFound';
+import './App.css';
+import AboutPage from './components/AboutPage';
+import ContactPage from './components/ContactPage';
+import HomePage from './components/HomePage';
+import { Routes, Route } from "react-router-dom";
+import NoPage from './components/NoPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-const App = () => {
+// import Header from './components/Header';
+
+function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <div className="App">
+       {/**Begin page content */}
+       <Header />
+        <Routes>
+          {/* <Route path="/" element={<Layout />}> */}
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+     {/**End page content */}
+     <Footer />
+    </div>
   );
-};
+}
 
 export default App;
